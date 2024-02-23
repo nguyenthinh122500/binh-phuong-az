@@ -226,15 +226,23 @@
 					<div class="nina-domain-slider">
 						<h3>Kiểm tra tên miền</h3>
 						<p>Đăng ký tên miền ngay từ bây giờ để bảo vệ thương hiệu của bạn</p>
-						<form action="kiem-tra-ten-mien.html" id="form-domain"
+						<form  id="form-domain"
 							onsubmit="return NN_FRAMEWORK.CheckDomain();" name="form-domain" method="post"
 							accept-charset="utf-8">
 							<div class="nina-search-domain">
 								<input type="text" data-role="search" name="domain" id="domain"
 									placeholder="Nhập tên miền bạn muốn tìm kiếm...">
-								<button type="submit" data-role="search"><i class="pe-7s-search"></i></button>
+								<button type="submit" data-role="search" onclick="submitForm(event)"><i class="pe-7s-search"></i></button>
 							</div>
 						</form>
+						
+						<script>
+							function submitForm(event) {
+								event.preventDefault();
+
+							}
+						</script>
+
 						<div class="nina-list-domain-slider">
 							<div class="owl-carousel owl-page" data-animateOut="" data-animateIn="" data-dot="0"
 								data-nav='1' data-loop='1' data-play='1' data-ltg-items='4' data-lg-items='3'

@@ -9,7 +9,7 @@
     <meta name="description" content="" />
     <meta name="robots" content="noodp,index,follow" />
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    
+
     <meta name="geo.region" content="VN" />
     <meta name="geo.placename" content="Hồ Chí Minh" />
     <meta name="geo.position" content="10.8521353;106.6279113" />
@@ -36,8 +36,9 @@
     <meta property="og:description" content="" />
     <meta property="og:image" content="/img/logo-og-600x315.jpg" />
     <link rel="canonical" href="kiem-tra-ten-mien.html" />
-        <link rel="shortcut icon" type="image/png" href="./img/logo-BP.png" />
-        <link rel="icon" type="image/png" href="./img/logo-BP.png" />    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/png" href="./img/logo-BP.png" />
+    <link rel="icon" type="image/png" href="./img/logo-BP.png" />
+    <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Css Files -->
     <link data-minify="1" rel="preload" href="assets/css/animate-tenmien.min.css" data-rocket-async="style" as="style"
         onload="this.onload=null;this.rel='stylesheet'" type="text/css" media="all">
@@ -137,16 +138,16 @@
                         <div class="nina-top-left">
                             <span>
                                 <i class="pe-7s-phone"></i>
-                                <a  href="tel:0906218318">
-					Hotline: 0906.218.318
-								</a> 
-                                
-                            <span>
-                                <i class="pe-7s-mail"></i>
-                                <a href="mailto:website@binhphuong.info">
-		Email: website@binhphuong.info
-</a>
-                            </span>
+                                <a href="tel:0906218318">
+                                    Hotline: 0906.218.318
+                                </a>
+
+                                <span>
+                                    <i class="pe-7s-mail"></i>
+                                    <a href="mailto:website@binhphuong.info">
+                                        Email: website@binhphuong.info
+                                    </a>
+                                </span>
                         </div>
                         <div class="nina-top-right">
                             <a href="gioi-thieu.html" title="Giới thiệu">Giới thiệu</a>
@@ -222,16 +223,24 @@
                     <div class="nina-domain-slider full">
                         <h3>Kiểm tra tên miền</h3>
                         <p>Đăng ký tên miền ngay từ bây giờ để bảo vệ thương hiệu của bạn</p>
-                        <form action="kiem-tra-ten-mien.html" id="form-domain"
-                            onsubmit="return NN_FRAMEWORK.CheckDomain();" name="form-domain" method="post"
-                            accept-charset="utf-8">
+                        <form id="form-domain" action="./not-found.html" name="form-domain" method="post" accept-charset="utf-8">
                             <div class="nina-search-domain">
                                 <input type="text" data-role="search" name="domain" id="domain" value=""
                                     placeholder="Nhập tên miền bạn muốn tìm kiếm...">
-                                <button type="submit" data-role="search"><i class="pe-7s-search"></i></button>
+                                <button type="submit" data-role="search" onclick="submitForm(event)"><i
+                                        class="pe-7s-search"></i></button>
                             </div>
                             <input type="hidden" name="check-post" id="check-post" value="">
                         </form>
+                        <script>
+                            function submitForm(event) {
+                                event.preventDefault(); 
+                                
+                            }
+                        </script>
+
+
+
                         <div class="nina-list-domain-slider">
                             <div class="owl-carousel owl-page" data-animateOut="" data-animateIn="" data-dot="0"
                                 data-nav='1' data-loop='1' data-play='1' data-ltg-items='6' data-lg-items='6'
@@ -463,7 +472,8 @@
                                 </div>
                                 <div class="nina-question-box-content" id="collapseQ1" data-parent="#accordionQuestion"
                                     style="">
-                                    <h3>Tôi muốn chuyển tên miền Quốc tế đăng ký nơi khác vềBINHPHUONG AZthì làm thế nào?</h3>
+                                    <h3>Tôi muốn chuyển tên miền Quốc tế đăng ký nơi khác vềBINHPHUONG AZthì làm thế
+                                        nào?</h3>
                                     <div class="nina-question-desc">Tên miền Quốc tế có thể chuyển sau 60 ngày đăng ký
                                         mới hoặc còn hạn tối thiếu 7 ngày, có mã EPP Code (mã chuyển tên miền xin tại
                                         nhà cung cấp cũ), ở trạng thái Unlock (mở khóa) và bỏ ẩn thông tin tên miền (nếu
@@ -554,7 +564,7 @@
             </div>
         </section>
 
-        
+
 
         <section id="nina-full-inpage">
             </div>
@@ -617,7 +627,7 @@
                                                     </svg>
                                                 </a>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -644,13 +654,14 @@
                             </div>
                             <div class="nina-footer-info">
                                 <h3 style="font-weight:bold;font-size:18px">BINHPHUONG AZ</h3>
-                                <p>F1/1Q, Đường số 1, Khu dân cư Đồng Danh, Xã Vĩnh Lộc A, Huyện Bình Chánh, TP. Hồ Chí Minh
+                                <p>F1/1Q, Đường số 1, Khu dân cư Đồng Danh, Xã Vĩnh Lộc A, Huyện Bình Chánh, TP. Hồ Chí
+                                    Minh
                                 </p>
                                 <p>Tel: 0906.218.318 </p>
                                 <p>Email: website@binhphuong.info</p>
                                 <p>Mã số thuế: 4101633623 </p>
-                                
-                                
+
+
                             </div>
                             <div class="nina-footer-info nina-flex nina-justify-content-end nina-align-items-end">
 
@@ -1435,7 +1446,7 @@
                     <span class="text-hotline">0906 218 318</span>
                 </a>
             </div>
-        
+
         </div>
         <script>
             var NN_FRAMEWORK = NN_FRAMEWORK || {};
